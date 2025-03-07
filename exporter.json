@@ -1,6 +1,6 @@
 {
   "id": "io.supernova.ios-swiftui",
-  "name": "iOS SwiftUI",
+  "name": "iOS SwiftUI+",
   "description": "iOS SwiftUI token and style exporter",
   "source_dir": "src",
   "version": "1.2.6",
