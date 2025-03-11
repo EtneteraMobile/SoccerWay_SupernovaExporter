@@ -19,7 +19,7 @@ public struct AppMeasures {
 
     {{ createDocumentationComment(token.description, "    ") }}
     {[/]}
-    public static let {[ inject "token_name" context this /]} = {{ token.value.measure }} 
+    public static let {[ inject "token_name" context this /]}: CGFloat = {{ token.value.measure }} 
     {[/]}
     {[/]}
     {[/]}
