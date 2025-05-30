@@ -29,9 +29,10 @@ public extension Text {
             {[ elseif (textDecoration == "Strikethrough") ]}
             .strikethrough() 
             {[/]}
-            {[ const lineSpacing = token.value.lineHeight /]}
-            {[ if lineSpacing ]}
-            .lineSpacing({{ lineSpacing.measure }}) 
+            {[ const lineHeight = token.value.lineHeight /]}
+            {[ const fontSize = token.value.fontSize /]}
+            {[ if (lineHeight && fontSize) ]}
+            .lineSpacing({{ lineHeight.measure - fontSize.measure }})
             {[/]}
             {[ const textCase = token.value.textCase /]}
             {[ if (textCase == "Upper") ]}
