@@ -31,7 +31,7 @@ public extension Text {
             {[/]}
             {[ const lineSpacing = token.value.lineHeight /]}
             {[ if lineSpacing ]}
-            .lineSpacing({{ lineSpacing.measure }}) 
+            .lineSpacing({{ lineSpacing.measure - token.value.measure }}) 
             {[/]}
             {[ const textCase = token.value.textCase /]}
             {[ if (textCase == "Upper") ]}
