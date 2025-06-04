@@ -1,31 +1,31 @@
 {
     "blueprints": [{
             "invoke": "borders.pr",
-            "write_to": "Styles/BorderExtension.swift"
+            "write_to": "DesignSystem/Generated/BorderExtension.swift"
         },
         {
             "invoke": "colors.pr",
-            "write_to": "Styles/ColorExtension.swift"
+            "write_to": "DesignSystem/Generated/ColorExtension.swift"
         },
         {
             "invoke": "gradients.pr",
-            "write_to": "Styles/GradientExtension.swift"
+            "write_to": "DesignSystem/Generated/GradientExtension.swift"
         },
         {
             "invoke": "measures.pr",
-            "write_to": "Styles/AppMeasures.swift"
+            "write_to": "DesignSystem/Generated/DesignSystem+Dimension.swift"
         },
         {
             "invoke": "radius.pr",
-            "write_to": "Styles/RadiusExtension.swift"
+            "write_to": "DesignSystem/Generated/RadiusExtension.swift"
         },
         {
             "invoke": "shadows.pr",
-            "write_to": "Styles/ShadowExtension.swift"
+            "write_to": "DesignSystem/Generated/ShadowExtension.swift"
         },
         {
             "invoke": "typography.pr",
-            "write_to": "Styles/FontExtension.swift"
+            "write_to": "DesignSystem/Generated/FontExtension.swift"
         }
     ]
 }

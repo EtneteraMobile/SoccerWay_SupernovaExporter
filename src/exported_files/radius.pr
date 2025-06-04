@@ -17,7 +17,7 @@ public extension View {
     {{ createDocumentationComment(token.description, "    ") }}
     {[/]}
     func border{[ inject "token_func_name" context this /]}() -> some View {
-        return self.cornerRadius({{ token.value.radius.measure }}) 
+        self.cornerRadius({{ token.value.radius.measure }}) 
     }
     {[/]}
     {[/]}
