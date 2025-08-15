@@ -5,6 +5,7 @@
   "source_dir": "src",
   "version": "1.2.6",
   "usesBrands": true,
+  "usesThemes": true,
   "tags": [
     "iOS",
     "SwiftUI",
