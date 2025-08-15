@@ -4,10 +4,6 @@
             "write_to": "DesignSystem/Generated/BorderExtension.swift"
         },
         {
-            "invoke": "colors.pr",
-            "write_to": "DesignSystem/Generated/ColorExtension.swift"
-        },
-        {
             "invoke": "gradients.pr",
             "write_to": "DesignSystem/Generated/GradientExtension.swift"
         },

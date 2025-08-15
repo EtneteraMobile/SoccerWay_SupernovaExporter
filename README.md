@@ -6,7 +6,7 @@
 
 The SwiftUI Exporter allows you to **produce production-ready code for all product styles (such as colors) defined inside your design system** in such a way that you can immediately use them to style your application elements. Specifically, this exporter automates the coding of:
 
-- [x] Color definitions
+- [ ] Color definitions -> Removed as we should use a different exporter
 - [x] Text Styles
 - [x] Gradients
 - [x] Shadows
@@ -15,25 +15,6 @@ The SwiftUI Exporter allows you to **produce production-ready code for all produ
 - [x] Measures
 
 You can generate all production ready-code either manually using Supernova's [VS Code extension](https://marketplace.visualstudio.com/items?itemName=SupernovaIO.pulsar-vsc-extension), or automate your code delivery pipeline using Supernova [Design Continuous Delivery](https://supernova.io/automated-code-delivery).
-
-For color, gradient and measure tokens, the exporter will generate extensions that expose all tokens through `Color.Token.tokenName`, `Gradient.Token.tokenName` or `AppMeasures.tokenName`.
-
-```
-import SwiftUI
-
-extension Color {
-    
-    static let Token = Color.TokenColor()
-    
-    struct TokenColor {
-
-        let primary = Color(.sRGB, red: 69/255, green: 137/255, blue: 255/255, opacity: 1) 
-        let success = Color(.sRGB, red: 0/255, green: 164/255, blue: 84/255, opacity: 1) 
-        let critical = Color(.sRGB, red: 210/255, green: 48/255, blue: 49/255, opacity: 1) 
-        ...
-    }
-}
-```
 
 For borders, shadows, radii and text styles, the exporter will generate extensions that expose the tokens in a way they can be directly applied to UI elements.
 
@@ -55,19 +36,6 @@ extension Text {
 ## Example Usage
 
 Once you have run the exporter against your design system, you can start using the code in your codebase right away. Here are a few examples of how you can use the output of the [SwiftUI] exporter:
-
-
-### Using a color and a text style
-
-```
-struct ContentView: View {
-    var body: some View {
-        Text("Styled text")
-            .foregroundColor(Color.Token.primary)
-            .textStyleUi11Regular()
-    }
-}
-```
 
 
 ## Installing

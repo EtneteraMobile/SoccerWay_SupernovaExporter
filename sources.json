@@ -1,7 +1,4 @@
 {
-    "colors.pr": {
-        "targets_ci": true
-    },
     "font.pr": {
         "transformer": "./src/utility/font.transformer.js"
     }
